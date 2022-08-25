@@ -1,0 +1,112 @@
+@import "mediasq";
+
+$backg-color: white;
+$backg-color2: #f8f9fa;
+$celeste: #a9def9;
+$t-align: center;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.paddingTB {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footerBg h3 {
+    text-align: center;
+}
+
+.col-lg-12,
+.col-lg-6 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.paddingT {
+    padding-top: 50px;
+}
+
+.centrar {
+    text-align: $t-align;
+}
+
+.paddingLR {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p {
+    text-align: $t-align;
+}
+
+h1 {
+    text-align: $t-align;
+}
+
+.cajas {
+    background-color: $backg-color2;
+
+    display: inline-block;
+    text-align: $t-align;
+    align-items: center;
+    width: 277px;
+    height: auto;
+    margin: 4px;
+    padding: 5px;
+
+}
+
+button {
+    width: 190px;
+    border-color: $backg-color;
+    background-color: $backg-color;
+}
+
+.con-cajas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    height: 30px;
+    background-color: $backg-color;
+    transition: 1s linear;
+}
+
+input:focus {
+    height: 40px;
+    background-color: $celeste;
+}
+
+.transition {
+    transition: all 2s linear;
+    width: 100%;
+}
+
+.transition:hover {
+    width: 75%;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.destacados {
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
